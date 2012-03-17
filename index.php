@@ -47,15 +47,15 @@ require('config.php');
 
 		<div class="row">
 				<div class="column twelve">
-				<form name="questionForm" action="twilio_sendsms.php" method="POST">
-				<div class = "column one">
+				<form name="questionForm" class="nice" action="twilio_sendsms.php" method="POST">
+				<div class = "column four">
 				Question:
 				</div>
 				<div class = "column eleven">
 					<textarea name = "question"></textarea>
 				</div>
 				<br /><br />
-				
+				Name: <input class="input-text" name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br /> 
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />

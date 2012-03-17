@@ -56,7 +56,11 @@ jQuery(document).ready(function ($) {
 //	$('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'left'});
 //	$('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'left'});
 
-
+	$('.submit-btn').click(function(event){
+		event.preventDefault();
+		//$('#send-sms').submit();
+		$(this).parent().submit();
+	});
 
 	/* DROPDOWN NAV ------------- */
 

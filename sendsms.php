@@ -1,3 +1,7 @@
+<?php
+require('config.php');
+?>
+
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -26,7 +30,7 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+	<?php require_once('includes/head.php'); ?>
 </head>
 <body>
 
@@ -50,7 +54,7 @@
 
 <textarea rows="30" class="textarea-style1" id="PhoneNumberList" placeholder="Please enter the phone numbers here with each number on a different line"></textarea>
 
-<a class="large green nice button radius" href="#">Send »</a>
+<a class="large green nice button radius submit-btn" href="#">Send »</a>
 
 					</form>
 				</div>
