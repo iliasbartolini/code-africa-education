@@ -37,29 +37,12 @@
 		</div>
 		<div class="row">
 			<div class="twelve columns">
-				<h2>Simple Education System</h2>
+				<h2>Page title</h2>
 			</div>
 		</div>
 
 		<div class="row">
-				<div class="column twelve">
-				<form name="questionForm" action="twilio_sendsms.php" method="POST">
-				<div class = "column four">
-				Question:
-				</div>
-				<div class = "column eight">
-					<input type="text" name = "question" />
-				</div>
-				<br /><br />
-				
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br /> 
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
-				<br /><br />
-				<input type="submit" name="submitQuestion" />
-				</form>
-				</div>
-				</div>
+body content
 		</div>
 
 	</div>
