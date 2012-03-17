@@ -26,6 +26,9 @@ print_r($numbers_lines);
 
 $pattern = '/^((?P<name>.+?)\s+)?(?P<number>\+?[\d\s]+)/';
 
+
+$results = array();
+
 foreach($numbers_lines as $line) {
   $line = trim($line);
   if (empty($line)) {
@@ -39,6 +42,8 @@ foreach($numbers_lines as $line) {
 
   $number = $matches['number'];
   $name = $matches['name'];
+
+  $status = $message = NULL;
   // @TODO: validate/format number
   try {
     $message = $client->account->sms_messages->create(
@@ -47,11 +52,23 @@ foreach($numbers_lines as $line) {
       $question
     );
 
-    print "\n <br />Message/Question sent to {$name}: {$number} [#{$message->sid}]";
+    $status = 1;
+    $message = "Message/Question sent to {$name}: {$number} [#{$message->sid}]";
   }
   catch(Exception $e) {
-    print("\n<br /> Error: " . $e->getMessage());
+    $status = 0;
+    $message = 'Error: ' . $e->getMessage();
   }
+
+  $results[] = array(
+    'status' => $status,
+    'name' => $name,
+    'number' => $number,
+    'message' => $message,
+  );
 }
 
-print "\n<br />DONE";
+foreach($results as $result) {
+  print "\n<br />" . $result['message'];
+}
+
