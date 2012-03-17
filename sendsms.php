@@ -32,19 +32,32 @@
 
 	<!-- container -->
 	<div class="container">
-
+		<div id="header">
+			<?php require_once('includes/header.php'); ?>
+		</div>
 		<div class="row">
 			<div class="twelve columns">
-				<h2>Code Africa Education</h2>
+				<h2>Send SMS</h2>
+				<p><h4>Use this form to send SMS to participant students.</h4></p>
 			</div>
 		</div>
 
 		<div class="row">
-				<div>
+				<div class="column seven">
+					<form method="post" action="twilio_sendsms.php" class="nice" id="send-sms">
+					
+<textarea rows="30" class="textarea-style1" id="MessageBody" placeholder="Please enter the SMS mesage body here"></textarea>
 
+<textarea rows="30" class="textarea-style1" id="PhoneNumberList" placeholder="Please enter the phone numbers here with each number on a different line"></textarea>
+
+<a class="large green nice button radius" href="#">Send »</a>
+
+					</form>
 				</div>
 		</div>
-
+		<div id="footer">
+			<?php require_once('includes/footer.php'); ?>
+		</div>
 	</div>
 	<!-- container -->
 
