@@ -35,13 +35,13 @@
 
 		<div class="row">
 			<div class="twelve columns">
-				<h2>Code Africa Education</h2>
+				<h2>Simple Education System</h2>
 			</div>
 		</div>
 
 		<div class="row">
 				<div>
-				<form name="questionForm">
+				<form name="questionForm" action="processing.php" method="POST">
 				Question: <input type="text" name = "question" />
 				<br /><br />
 				
