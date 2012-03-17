@@ -64,13 +64,5 @@ body content
 	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
 
-	<script>
-	 var PUSHER_APP_KEY = "<?php echo(PUSHER_APP_KEY); ?>";
-	</script>
-	<script src="http://js.pusher.com/1.11/pusher.min.js"></script>
-	<script src="javascripts/pusher.js"></script>	
-	
-	<!-- do not include in production -->
-	<script src="javascripts/_pusher_tests.js"></script>
 </body>
 </html>
