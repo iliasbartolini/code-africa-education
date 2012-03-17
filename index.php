@@ -52,8 +52,8 @@
 				</div>
 				<br /><br />
 				
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br /> 
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
+				Name: <input name="name[]" type="text /> Phone: <input name="phone[]" type="text"/> <br />
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
 				<br /><br />
 				<input type="submit" name="submitQuestion" />
