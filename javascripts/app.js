@@ -70,7 +70,9 @@ jQuery(document).ready(function ($) {
 	$('.submit-btn').click(function(event){
 		event.preventDefault();
 		//$('#send-sms').submit();
-		$(this).parent().submit();
+		//$(this).parent().submit();
+
+		getResults();
 	});
 
 	/* DROPDOWN NAV ------------- */
