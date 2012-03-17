@@ -50,9 +50,9 @@ require('config.php');
 				<div class="column seven">
 					<form method="post" action="twilio_sendsms.php" class="nice" id="send-sms">
 					
-<textarea rows="30" class="textarea-style1" id="MessageBody" placeholder="Please enter the SMS mesage body here"></textarea>
+<textarea rows="30" name="question" class="textarea-style1" id="MessageBody" placeholder="Please enter the SMS mesage body here"></textarea>
 
-<textarea rows="30" class="textarea-style1" id="PhoneNumberList" placeholder="Please enter the phone numbers here with each number on a different line"></textarea>
+<textarea rows="30" name="numbers" class="textarea-style1" id="PhoneNumberList" placeholder="Please enter the phone numbers here with each number on a different line"></textarea>
 
 <a class="large green nice button radius submit-btn" href="#">Send »</a>
 

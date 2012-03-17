@@ -1,5 +1,8 @@
 <?php
 
+
+require_once(dirname(__FILE__) . '/includes/common.php');
+
 // no post no fun
 if (empty($_POST)) {
   header('Location: /');
@@ -17,16 +20,25 @@ $auth_token = "8f5541324b03c1a569562606bfd081a4"; // Your Twilio auth token
 $client = new Services_Twilio($account_sid, $auth_token);
 
 $question = $_POST['question'];
-$names = $_POST['name'];
-$numbers = $_POST['phone'];
+$numbers_lines = explode("\n", $_POST['numbers']);
 
-foreach($names as $index => $name) {
-  if (empty($name) || empty($numbers[$index])) {
+print_r($numbers_lines);
+
+$pattern = '/^((?P<name>.+?)\s+)?(?P<number>\+?[\d\s]+)/';
+
+foreach($numbers_lines as $line) {
+  $line = trim($line);
+  if (empty($line)) {
     continue;
   }
 
-  $number = $numbers[$index];
+  preg_match($pattern, $line, $matches);
+  if (empty($matches['number'])) {
+    continue;
+  }
 
+  $number = $matches['number'];
+  $name = $matches['name'];
   // @TODO: validate/format number
   try {
     $message = $client->account->sms_messages->create(
