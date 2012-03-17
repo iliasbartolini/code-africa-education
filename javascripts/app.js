@@ -59,7 +59,24 @@ jQuery(document).ready(function ($) {
 	/* TOOLTIPS ------------ */
 	$(this).tooltips();
 
+var getResults = function() {
 
+          $.getJSON('twilio_sendsms.php', function(data) {
+          var items = [];
+          try{
+            $.each(data, function(key,val)){
+              items.push('<li>Name'+ status +'</li>')
+            }
+          } catch (err) {
+              console.log('error:'+ err);
+          }
+
+          $('<ul/>', {
+            'class': 'my-new-list',
+            html: items.join('')
+          }).appendTo('body');
+        });
+}
 
 	/* UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE6/7/8 SUPPORT AND ARE USING .block-grids */
 //	$('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'left'});
