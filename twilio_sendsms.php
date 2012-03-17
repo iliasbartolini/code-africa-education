@@ -35,7 +35,7 @@ foreach($names as $index => $name) {
       $question
     );
 
-    print "Message/Question sent to {$name}: {$number} [#{$message->sid}]";
+    print "\n <br />Message/Question sent to {$name}: {$number} [#{$message->sid}]";
   }
   catch(Exception $e) {
     print("\n<br /> Error: " . $e->getMessage());
