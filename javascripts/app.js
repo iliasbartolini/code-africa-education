@@ -1,5 +1,16 @@
 /* Foundation v2.2 http://foundation.zurb.com */
 jQuery(document).ready(function ($) {
+  
+  // $('#questionForm').submit(questionSubmitted);
+  //   
+  // function questionSubmitted() {
+  //   var form = $(this);
+  //   var action = form.attr('action');
+  //   
+  //   
+  //   return false;
+  // }
+  
 
 	/* Use this js doc for all application specific JS */
 
