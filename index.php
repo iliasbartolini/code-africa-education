@@ -46,25 +46,70 @@ require('config.php');
 		</div>
 
 		<div class="row">
-				<div class="column twelve">
-				<form name="questionForm" class="nice" action="twilio_sendsms.php" method="POST">
-				<div class = "column four">
-				Question:
-				</div>
-				<div class = "column eleven">
-					<textarea name = "question"></textarea>
-				</div>
-				<br /><br />
-				Name: <input class="input-text" name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br /> 
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
-				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
-				<br /><br />
-				<input type="submit" name="submitQuestion" class="nice small radius blue button"/>
+				<div class="columns twelve">
+				  
+				  <form name="questionForm" class="nice" action="twilio_sendsms.php" method="POST">
+				    <div class="row">
+				      <div class="columns two">
+				        <label for="question">Question</label>
+				      </div>
+				      <div class="columns four">
+					      <textarea name="question"></textarea>
+				      </div>
+				      <div class="columns two">
+				        <label for="answer">Answer</label>
+				      </div>
+				      <div class="columns four">
+					      <textarea name="answer"></textarea>
+				      </div>
+				    </div>
+				    
+				    <hr />
+				    
+				    <div class="row row-head">
+				      <div class="columns four">
+				        Name
+				      </div>
+				      <div class="columns four">
+				        Phone Number
+				      </div>
+				      <div class="columns three">
+				        Answer
+				      </div>
+				      <div class="columns one">
+				        Correct?
+				      </div>
+				    </div>
+				    <?php
+				    for($row = 0; $row < count($DEFAULT_USERS); ++$row) {
+				      ?>
+				    <div class="row">
+				      <div class="columns four">
+				        <input class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
+				      </div>
+				      <div class="columns four">
+				        <input class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
+				      </div>
+				      <div class="columns three">
+				        Answer
+				      </div>
+				      <div class="columns one">
+				        Y/N
+				      </div>
+				    </div>
+				    <?php
+			      }
+				    ?>
+				    <div class="row">
+				      <div class="columns twelve">
+				        <input type="submit" name="submitQuestion" class="nice small radius blue button"/>
+				      </div>
+				    </div>
 				</form>
-				</div>
-				</div>
+				
+			</div>
 		</div>
+  </div>
 
 	</div>
 			<div id="footer">
