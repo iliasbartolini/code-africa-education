@@ -32,16 +32,54 @@
 
 	<!-- container -->
 	<div class="container">
-
+		<div id="header">
+			<?php require_once('includes/header.php'); ?>
+		</div>
 		<div class="row">
 			<div class="twelve columns">
-				<h2>Code Africa Education</h2>
+				<h2>Send SMS</h2>
+				<p><h4>Use this form to send SMS to participant students.</h4></p>
 			</div>
 		</div>
 
 		<div class="row">
-				<div>
+				<div class="column five">
+					<form class="nice" id="send-sms">
+					
 
+					<label for="phone-number01">Enter student <span class="std-index">1</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+					<label for="phone-number01">Enter student <span class="std-index">2</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+					
+					<label for="phone-number01">Enter student <span class="std-index">3</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">4</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">5</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">6</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">7</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">8</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">9</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+										<label for="phone-number01">Enter student <span class="std-index">10</span> mobile number</label>
+					<input id="phone-number01" class="expand input-text" type="text">
+
+					<a class="large green nice button radius" href="#">Send SMS</a>
+
+					</form>
 				</div>
 		</div>
 
