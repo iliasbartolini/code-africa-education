@@ -41,7 +41,17 @@
 
 		<div class="row">
 				<div>
-
+				<form name="questionForm">
+				Question: <input type="text" name = "question" />
+				<br /><br />
+				
+				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br /> 
+				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
+				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
+				<br /><br />
+				<input type="submit" name="submitQuestion" />
+				</form>
+				
 				</div>
 		</div>
 
