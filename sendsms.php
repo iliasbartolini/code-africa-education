@@ -44,7 +44,7 @@
 
 		<div class="row">
 				<div class="column seven">
-					<form class="nice" id="send-sms">
+					<form method="post" action="twilio_sendsms.php" class="nice" id="send-sms">
 					
 <textarea rows="30" class="textarea-style1" id="MessageBody" placeholder="Please enter the SMS mesage body here"></textarea>
 
