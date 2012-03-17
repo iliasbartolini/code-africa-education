@@ -15,6 +15,18 @@
 ----------------------------------------- */
 h4 {color: #999;}
 
+.row-head {
+  font-weight: bold;
+}
+
+.row.row-head {
+  margin-bottom: 10px;
+}
+
+form[name='questionForm'] label {
+  font-weight: bold;
+}
+
 
 /* -----------------------------------------
    Send SMS
