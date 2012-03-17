@@ -1,5 +1,10 @@
 <?php
 
+// no post no fun
+if (empty($_POST)) {
+  header('Location: /');
+}
+
 require dirname(__FILE__) . '/lib/twilio/Services/Twilio.php';
 
 $account_sid = "AC8c2a05c841dd43d3b89881ea46f9d361"; // Your Twilio account sid
