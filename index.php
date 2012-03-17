@@ -40,9 +40,14 @@
 		</div>
 
 		<div class="row">
-				<div>
-				<form name="questionForm" action="processing.php" method="POST">
-				Question: <input type="text" name = "question" />
+				<div class="column twelve">
+				<form name="questionForm" action="twilio_sendsms.php" method="POST">
+				<div class = "column four">
+				Question:
+				</div>
+				<div class = "column eight">
+					<input type="text" name = "question" />
+				</div>
 				<br /><br />
 				
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br /> 
@@ -51,7 +56,7 @@
 				<br /><br />
 				<input type="submit" name="submitQuestion" />
 				</form>
-				
+				</div>
 				</div>
 		</div>
 
