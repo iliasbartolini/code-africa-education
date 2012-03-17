@@ -1,3 +1,7 @@
+<?php
+require('config.php');
+?>
+
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
