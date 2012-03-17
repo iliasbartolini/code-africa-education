@@ -52,12 +52,12 @@ require('config.php');
 				Question:
 				</div>
 				<div class = "column eleven">
-					<input type="text" name = "question" class="Large Input"/>
+					<textarea name = "question"></textarea>
 				</div>
 				<br /><br />
 				
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
-				Name: <input name="name[]" type="text /> Phone: <input name="phone[]" type="text"/> <br />
+				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
 				<br /><br />
 				<input type="submit" name="submitQuestion" class="nice small radius blue button"/>
