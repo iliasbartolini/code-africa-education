@@ -3,9 +3,6 @@
 require_once('config.php');
 require_once(dirname(__FILE__) . '/includes/common.php');
 
-print_r($_POST);
-die();
-
 // no post no fun
 if (empty($_POST) || empty($_POST['question']) || empty($_POST['phone'])) {
   header('Location: /');
@@ -25,6 +22,12 @@ $results = array();
 $data = array();
 
 foreach($_POST['phone'] as $index => $phone) {
+  $phone = trim($phone);
+
+  if (empty($phone)) {
+    continue;
+  }
+  
   $data[] = array(
     'phone' => $phone,
     'name' => !empty($_POST['name'][$index]) ? $_POST['name'][$index] : '',
