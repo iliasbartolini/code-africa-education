@@ -1,3 +1,7 @@
+<?php
+require('config.php');
+?>
+
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -44,11 +48,11 @@
 		<div class="row">
 				<div class="column twelve">
 				<form name="questionForm" action="twilio_sendsms.php" method="POST">
-				<div class = "column four">
+				<div class = "column one">
 				Question:
 				</div>
-				<div class = "column eight">
-					<input type="text" name = "question" />
+				<div class = "column eleven">
+					<input type="text" name = "question" class="Large Input"/>
 				</div>
 				<br /><br />
 				
@@ -56,7 +60,7 @@
 				Name: <input name="name[]" type="text /> Phone: <input name="phone[]" type="text"/> <br />
 				Name: <input name="name[]" type="text"/> Phone: <input name="phone[]" type="text"/> <br />
 				<br /><br />
-				<input type="submit" name="submitQuestion" />
+				<input type="submit" name="submitQuestion" class="nice small radius blue button"/>
 				</form>
 				</div>
 				</div>
@@ -76,6 +80,15 @@
 	<script src="javascripts/modernizr.foundation.js"></script>
 	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
+	
+	<script>
+	 var PUSHER_APP_KEY = "<?php echo(PUSHER_APP_KEY); ?>";
+	</script>
+	<script src="http://js.pusher.com/1.11/pusher.min.js"></script>
+	<script src="javascripts/pusher.js"></script>	
+	
+	<!-- do not include in production -->
+	<script src="javascripts/_pusher_tests.js"></script>
 
 </body>
 </html>
