@@ -43,46 +43,21 @@
 		</div>
 
 		<div class="row">
-				<div class="column five">
+				<div class="column seven">
 					<form class="nice" id="send-sms">
 					
+<textarea rows="30" class="textarea-style1" id="MessageBody" placeholder="Please enter the SMS mesage body here"></textarea>
 
-					<label for="phone-number01">Enter student <span class="std-index">1</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
+<textarea rows="30" class="textarea-style1" id="PhoneNumberList" placeholder="Please enter the phone numbers here with each number on a different line"></textarea>
 
-					<label for="phone-number01">Enter student <span class="std-index">2</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-					
-					<label for="phone-number01">Enter student <span class="std-index">3</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">4</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">5</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">6</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">7</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">8</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">9</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-										<label for="phone-number01">Enter student <span class="std-index">10</span> mobile number</label>
-					<input id="phone-number01" class="expand input-text" type="text">
-
-					<a class="large green nice button radius" href="#">Send SMS</a>
+<a class="large green nice button radius" href="#">Send »</a>
 
 					</form>
 				</div>
 		</div>
-
+		<div id="footer">
+			<?php require_once('includes/footer.php'); ?>
+		</div>
 	</div>
 	<!-- container -->
 
