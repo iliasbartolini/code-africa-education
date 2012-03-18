@@ -32,6 +32,13 @@ table.student-answers {
   width: 100%;
 }
 
+table.student-answers td.answer,
+table.student-answers td.indicator {
+  text-align: center;
+}
+
+
+
 table.student-answers tr.correct .indicator {
   font-weight: bold;
   color: green;
@@ -43,10 +50,11 @@ table.student-answers tr.incorrect .indicator {
   font-weight: bold;
   color: red;
   background: no-repeat url('../images/no_indicator.png') 19px 11px;
+  text-indent: -5000px;
 }
 
 table.student-answers .header.answer,
-table.student-answers .header.indicatior {
+table.student-answers .header.indicator {
   text-align: center;
 }
 
