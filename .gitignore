@@ -1,2 +1,5 @@
 .project
+.gitconfig
+
+#to avoid publishing prod envirorment cofig 
 config.php
