@@ -33,9 +33,6 @@ require('config.php');
 	<?php require_once('includes/head.php'); ?>
 </head>
 <body>
-
-	<!-- container -->
-	<div class="container">
 		<div id="header">
 			<?php require_once('includes/header.php'); ?>
 		</div>
@@ -349,7 +346,6 @@ require('config.php');
 		<div class="spacer"></div>
 	</section>
 
-  </div>
 
 	</div>
 			<div id="footer">
