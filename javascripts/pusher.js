@@ -34,27 +34,25 @@ function newAnswerReceived(data) {
 }
 
 function mark_input_correct($input_field, answer) {
-  $input_field
-    .parents('tr')
-      .removeClass('unanswered')
-      .addClass('correct');
-  $(this)
-    .parents('td.indicator')
-    .text('Y');
-  $(this)
-    .parents('td.answer')
+  var $parent =  $input_field.parents('tr');
+
+  $parent
+   .removeClass('unanswered')
+   .addClass('correct');
+
+  $parent
+    .find('td.answer')
     .text(answer);
 }
 
 function mark_input_incorrect($input_field, answer) {
-  $input_field
-    .parents('tr')
-      .removeClass('unanswered')
-      .addClass('incorrect');
-  $(this)
-    .parents('td.indicator')
-    .text('N');
-  $(this)
-    .parents('td.answer')
+  var $parent =  $input_field.parents('tr');
+
+  $parent
+   .removeClass('unanswered')
+   .addClass('incorrect');
+
+  $parent
+    .find('td.answer')
     .text(answer);
 }
