@@ -76,7 +76,7 @@
 		<hr/>
 		<h3>Content</h3>
 		<ul class="toggle">
-			<li class="icn_new_article"><a href="#">New Question</a></li>
+			<li class="icn_new_article"><a href="index.php">New Question</a></li>
 			<li class="icn_edit_article"><a href="#">Edit Questions</a></li>
 			<li class="icn_categories"><a href="#">Categories</a></li>
 			<li class="icn_tags"><a href="#">Tags</a></li>
