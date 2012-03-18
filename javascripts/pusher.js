@@ -18,5 +18,5 @@ function newAnswerReceived(data) {
   // $('[name="phone[]"]').val()
 
 
-  // alert( JSON.stringify(data) );
+  alert( JSON.stringify(data) );
 }
