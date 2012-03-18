@@ -1,5 +1,12 @@
 <?php
-require('config.php');
+		require('config.php');
+require('auth.php');
+		
+		if (!isset($_SESSION['user'])) {
+			header("location:logon.php");
+		}
+
+
 ?>
 
 <!DOCTYPE html>
