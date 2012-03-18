@@ -20,3 +20,13 @@ function debug($data, $label = NULL) {
     return FALSE;
   }
 }
+
+/**
+ * Reqturns TRUE if a request has been made from an AJAX
+ *
+ * @return bool
+ */
+function request_is_xhr() {
+  return !empty($_SERVER[ 'HTTP_X_REQUESTED_WITH' ]) && // avoid PHP notice
+    strtolower($_SERVER[ 'HTTP_X_REQUESTED_WITH' ]) === 'xmlhttprequest';
+}
