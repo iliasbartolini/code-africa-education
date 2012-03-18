@@ -23,19 +23,7 @@ require('auth.php');
 	<meta name="viewport" content="width=device-width" />
 
 	<title>Welcome to Code Africa Education</title>
-  
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/app.css">
 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-
-	<script src="javascripts/jquery.min.js"></script>
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	<?php require_once('includes/head.php'); ?>
 </head>
 <body>

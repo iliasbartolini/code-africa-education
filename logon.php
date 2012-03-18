@@ -14,26 +14,9 @@ if(session_id() != '') {
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
 
 	<title>Welcome to Code Africa Education</title>
   
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
-	<link rel="stylesheet" href="stylesheets/app.css">
-
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-
-	<script src="javascripts/jquery.min.js"></script>
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	<?php require_once('includes/head.php'); ?>
 </head>
 <body>
@@ -56,7 +39,7 @@ if(session_id() != '') {
 		  	
 		  	<input placeholder="Password" name="password" id="password" type="password" class="input-text"/>
 		  	
-		  	<button id="btn-submit">Log in</button>
+		  	<button id="btn-submit small white button radius">Log in</button>
 		  </form>
 		</div>
 	</article>
@@ -78,15 +61,6 @@ if(session_id() != '') {
 	<script src="javascripts/modernizr.foundation.js"></script>
 	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
-	
-	<script>
-	 var PUSHER_APP_KEY = "<?php echo(PUSHER_APP_KEY); ?>";
-	</script>
-	<script src="http://js.pusher.com/1.11/pusher.min.js"></script>
-	<script src="javascripts/pusher.js"></script>	
-	
-	<!-- do not include in production -->
-	<script src="javascripts/_pusher_tests.js"></script>
 
 </body>
 </html>

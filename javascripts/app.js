@@ -53,10 +53,14 @@ jQuery(document).ready(function ($) {
   /* PLACEHOLDER FOR FORMS ------------- */
   /* Remove this and jquery.placeholder.min.js if you don't need :) */
 
-  $('input, textarea').placeholder();
+  if( $('input, textarea').placeholder ) {
+    $('input, textarea').placeholder();
+  }
 
   /* TOOLTIPS ------------ */
-  $(this).tooltips();
+  if( $(this).tooltips ) {
+    $(this).tooltips();
+  }
 
   var options = {
     url:'twilio_sendsms.php',
@@ -94,7 +98,7 @@ jQuery(document).ready(function ($) {
     }
     lockNavBar = true;
   });
-  if (Modernizr.touch) {
+  if ( window['Modernizr'] && Modernizr.touch) {
     $('.nav-bar>li.has-flyout>a.main').css({
       'padding-right':'75px'
     });

@@ -15,25 +15,9 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-
-	<title>Welcome to Code Africa Education</title>
   
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/app.css">
+	<title>Welcome to Code Africa Education</title>
 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-
-	<script src="javascripts/jquery.min.js"></script>
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	<?php require_once('includes/head.php'); ?>
 </head>
 <body>
@@ -101,6 +85,8 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				    <?php
 			      }
 				    ?>
+				    </table>
+				    
 				    <div class="row">
 				      <div class="columns twelve">
 				        <input type="submit" name="submitQuestion" class="submit-btn"/>
