@@ -45,6 +45,11 @@ table.student-answers tr.incorrect .indicator {
   background: no-repeat url('../images/no_indicator.png') 19px 11px;
 }
 
+table.student-answers .header.answer,
+table.student-answers .header.indicatior {
+  text-align: center;
+}
+
 /* -----------------------------------------
    Send SMS
 ----------------------------------------- */

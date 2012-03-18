@@ -61,8 +61,8 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
         				<tr> 
             				<th class="header">Name</th> 
             				<th class="header">Phone Number</th> 
-            				<th class="header">Answer</th> 
-            				<th class="header">Correct?</th> 
+            				<th class="answer header">Answer</th>
+            				<th class="indicator header">Correct?</th>
         				</tr> 
         			</thead>
 				    <?php
