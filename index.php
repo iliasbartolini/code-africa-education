@@ -1,11 +1,10 @@
 <?php
 		require('config.php');
-require('auth.php');
+		require('auth.php');
 		
 		if (!isset($_SESSION['user'])) {
 			header("location:logon.php");
 		}
-
 
 ?>
 
@@ -40,27 +39,10 @@ require('auth.php');
 			<section id="main" class="column">
 		
 		<article class="module width_full">
-			<header><h3>Stats</h3></header>
+			<header><h3>Today | Week | Month | Year</h3></header>
 			<div class="module_content">
 				<article class="stats_graph">
-					<img src="http://chart.apis.google.com/chart?chxr=0,0,3000&chxt=y&chs=520x340&cht=lc&chco=76A4FB,80C65A&chd=s:Tdjpsvyvttmiihgmnrst,OTbdcfhhggcTUTTUadfk&chls=2|2&chma=40,20,20,30" width="520" height="340" alt="" />
-				</article>
-				
-				<article class="stats_overview">
-					<div class="overview_today">
-						<p class="overview_day">Today</p>
-						<p class="overview_count">2,103</p>
-						<p class="overview_type">Answers</p>
-						<p class="overview_count">1,897</p>
-						<p class="overview_type">Correct</p>
-					</div>
-					<div class="overview_previous">
-						<p class="overview_day">Yesterday</p>
-						<p class="overview_count">1,646</p>
-						<p class="overview_type">Answers</p>
-						<p class="overview_count">1,454</p>
-						<p class="overview_type">Correct</p>
-					</div>
+					<img src="images/chart.png" alt="" />
 				</article>
 				<div class="clear"></div>
 			</div>
