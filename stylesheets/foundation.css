@@ -206,11 +206,11 @@
 	.row { width: 100%; max-width: 980px; min-width: 727px; margin: 0 auto; }
 	/* To fix the grid into a certain size, set max-width to width */
 	.row .row { min-width: 0; }
-	
+/*	
 	.column, .columns { margin-left: 4.4%; float: left; min-height: 1px; position: relative; }
 	.column:first-child, .columns:first-child { margin-left: 0; }
 	[class*="column"] + [class*="column"]:last-child { float: right; }
-	
+	*/
 	.row .one 		{ width: 4.3%; }
 	.row .two 		{ width: 13%; }
 	.row .three 	{ width: 21.679%; }
