@@ -1,6 +1,6 @@
 	<header id="header">
 		<hgroup>
-			<h1 class="site_title"><a href="index.html">Dashboard</a></h1>
+			<h1 class="site_title"><a href="/">Dashboard</a></h1>
 			<h2 class="section_title">Simple SMS Education System</h2>
 			
 		</hgroup>
