@@ -7,6 +7,7 @@
 				<a href="https://twitter.com/iliasbartolini">@iliasbartolini</a>
 				<a href="https://twitter.com/leggetter">@leggetter</a>
 				<a href="https://twitter.com/tianjianfeng">@tianjianfeng</a>
+				<a href="https://twitter.com/SimonaCiocoiu">@SimonaCiocoiu</a>
 				&copy;2012 MIT LICENSE</h4></p>
 	</div>
 </div>
