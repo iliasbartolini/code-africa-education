@@ -48,7 +48,7 @@ require('config.php');
 		<div class="row">
 				<div class="columns twelve">
 				  
-				  <form name="questionForm" class="nice" action="twilio_sendsms.php" method="POST">
+				  <form name="questionForm" class="nice form-wrapper" action="twilio_sendsms.php" method="POST">
 				    <div class="row">
 				      <div class="columns two">
 				        <label for="question">Question</label>

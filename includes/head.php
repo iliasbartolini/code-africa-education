@@ -1,3 +1,4 @@
+<script src="http://malsup.github.com/jquery.form.js"></script>
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
 	<script src="js/hideshow.js" type="text/javascript"></script>
 	<script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
