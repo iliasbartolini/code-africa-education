@@ -63,7 +63,20 @@ foreach($data as $record) {
   );
 }
 
+$had_errors = FALSE;
+$succedded_messages = 0;
 foreach($results as $result) {
-  print "\n<br />" . $result['message'];
+  if (!$result['status']) {
+    $had_errors = TRUE;
+  }
+  else {
+    $succedded_messages++;
+  }
 }
 
+if ($had_errors) {
+  $result = array(
+    'status' => !$has_errors,
+  );
+  print json_encode($result);
+}

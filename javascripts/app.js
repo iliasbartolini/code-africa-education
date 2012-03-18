@@ -60,7 +60,7 @@ jQuery(document).ready(function ($) {
 
   var options = {
     url:'twilio_sendsms.php',
-    success: questionsSubmitted;
+    success: questionsSubmitted
   };
 
   $('#send-sms').ajaxForm(options);

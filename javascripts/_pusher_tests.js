@@ -1,7 +1,7 @@
 $(pusherTestsInit);
 
 function pusherTestsInit() {
-  $(document.body).dblclick(sendFakeEvent);
+  // $(document.body).dblclick(sendFakeEvent);
 };
 
 function sendFakeEvent() {
