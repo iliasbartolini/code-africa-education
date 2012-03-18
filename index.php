@@ -130,7 +130,7 @@ require('config.php');
 				    ?>
 				    <div class="row">
 				      <div class="columns twelve">
-				        <input type="submit" name="submitQuestion" class="nice small radius blue button"/>
+				        <input type="submit" name="submitQuestion" class="submit-btn"/>
 				      </div>
 				    </div>
 				</form>
