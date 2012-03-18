@@ -1,5 +1,12 @@
 <?php
-require('config.php');
+		error_reporting(E_ALL ^ E_NOTICE);
+ini_set('display_errors', 1);
+
+session_start();
+		require('config.php');
+if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
+	header("Location:logon.php");	
+}
 ?>
 
 <!DOCTYPE html>
