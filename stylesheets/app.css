@@ -30,7 +30,6 @@ div.w50 {
   float: left;
 }
 
-
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
@@ -58,6 +57,9 @@ table.student-answers td.indicator {
   text-align: center;
 }
 
+table.student-answers tr.actions button {
+  background-color: #8DC63F;
+}
 
 
 table.student-answers tr.correct .indicator {

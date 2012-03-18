@@ -79,6 +79,11 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				    <?php
 			      }
 				    ?>
+				    <tr class="actions">
+				      <td colspan="4">
+                <button id="add_student_btn" class="small green button radius">Add Student »</button>
+              </td>
+            <tr>
 				    </table>
 				    
 				    <input type="submit" name="submitQuestion" class="submit-btn"/>
