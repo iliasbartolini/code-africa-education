@@ -1,6 +1,4 @@
 <?php
-		error_reporting(E_ALL ^ E_NOTICE);
-ini_set('display_errors', 1);
 
 session_start();
 		require('config.php');
@@ -75,36 +73,47 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				      </div>
 				    </div>
 				    
-				    <table class="student-answers">
-				      <tr class="row-head">
-				        <td>Name</td>
-				        <td>Phone Number</td>
-				        <td>Answer</td>
-				        <td>Correct?</td>
-				      </tr>
+				    <hr />
+				    
+				    <div class="row row-head">
+				      <div class="columns four">
+				        Name
+				      </div>
+				      <div class="columns three">
+				        Phone Number
+				      </div>
+				      <div class="columns three">
+				        Answer
+				      </div>
+				      <div class="columns two">
+				        Correct?
+				      </div>
+				    </div>
 				    <?php
 				    for($row = 0; $row < count($DEFAULT_USERS); ++$row) {
 				      ?>
-				    <tr class="unanswered">
-				      <td>
+				    <div class="row">
+				      <div class="columns four">
 				        <input class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
-				      </td>
-				      <td>
+				      </div>
+				      <div class="columns three">
 				        <input class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
-				      </td>
-				      <td class="answer">
+				      </div>
+				      <div class="columns three">
 				        Answer
-				      </td>
-				      <td class="indicator">
+				      </div>
+				      <div class="columns two">
 				        Y/N
-				      </td>
-				    </tr>
+				      </div>
+				    </div>
 				    <?php
 			      }
 				    ?>
-				    </table>
-				    
-				    <input type="submit" name="submitQuestion" class="submit-btn"/>
+				    <div class="row">
+				      <div class="columns twelve">
+				        <input type="submit" name="submitQuestion" class="submit-btn"/>
+				      </div>
+				    </div>
 				</form>
 				
 			</div>

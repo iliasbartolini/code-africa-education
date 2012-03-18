@@ -1,6 +1,9 @@
 <?php
-session_destroy();
-require('config.php');
+		require('config.php');
+if(session_id() != '') {
+  session_destroy();
+}
+
 ?>
 
 <!DOCTYPE html>
