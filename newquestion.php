@@ -23,7 +23,6 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 	<title>Welcome to Code Africa Education</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 
 	<!--[if lt IE 9]>
@@ -63,49 +62,42 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				      <label for="question">Question</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="question"></textarea>
+					      <textarea required="required" name="question"></textarea>
 				      </div>
 				      <div class="columns two">
 				        <label for="answer">Answer</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="answer"></textarea>
+					      <textarea required="required" id="answer" name="answer"></textarea>
 				      </div>
 				    </div>
 				    
-				    <hr />
-				    
-				    <div class="row row-head">
-				      <div class="columns four">
-				        Name
-				      </div>
-				      <div class="columns three">
-				        Phone Number
-				      </div>
-				      <div class="columns three">
-				        Answer
-				      </div>
-				      <div class="columns two">
-				        Correct?
-				      </div>
-				    </div>
+				    <table class="student-answers">
+				      <thead> 
+        				<tr> 
+            				<th class="header">Name</th> 
+            				<th class="header">Phone Number</th> 
+            				<th class="header">Answer</th> 
+            				<th class="header">Correct?</th> 
+        				</tr> 
+        			</thead>
 				    <?php
 				    for($row = 0; $row < count($DEFAULT_USERS); ++$row) {
 				      ?>
-				    <div class="row">
-				      <div class="columns four">
-				        <input class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
-				      </div>
-				      <div class="columns three">
-				        <input class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
-				      </div>
-				      <div class="columns three">
-				        Answer
-				      </div>
-				      <div class="columns two">
-				        Y/N
-				      </div>
-				    </div>
+				    <tr class="unanswered">
+				      <td>
+				        <input required="required" class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
+				      </td>
+				      <td>
+				        <input required="required" class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
+				      </td>
+				      <td class="answer">
+				        -
+				      </td>
+				      <td class="indicator">
+				        -
+				      </td>
+				    </tr>
 				    <?php
 			      }
 				    ?>
@@ -137,8 +129,6 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 	<!-- container -->
 
 	<!-- Included JS Files -->
-	<script src="javascripts/modernizr.foundation.js"></script>
-	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
 	
 	<script>
