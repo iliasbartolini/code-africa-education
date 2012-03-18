@@ -37,23 +37,17 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 		  <header><h3>Ask a Question</h3></header>
 		  
 		  <div class="module_content">
-				<div class="row">
-				<div id="content" class="columns twelve">
 				  
 				  <form id="send-sms" name="questionForm" class="nice form-wrapper" action="twilio_sendsms.php" method="POST">
-				    <div class="row">
-				      <div class="columns two">
+
+				    <div class="w50">
 				      <label for="question">Question</label>
-				      </div>
-				      <div class="columns four">
-					      <textarea required="required" name="question"></textarea>
-				      </div>
-				      <div class="columns two">
-				        <label for="answer">Answer</label>
-				      </div>
-				      <div class="columns four">
-					      <textarea required="required" id="answer" name="answer"></textarea>
-				      </div>
+					    <textarea required="required" id="question" name="question"></textarea>
+					  </div>
+				    
+				    <div class="w50">
+				      <label for="answer">Answer</label>
+				      <textarea required="required" id="answer" name="answer"></textarea>
 				    </div>
 				    
 				    <table class="student-answers">
@@ -87,16 +81,10 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				    ?>
 				    </table>
 				    
-				    <div class="row">
-				      <div class="columns twelve">
-				        <input type="submit" name="submitQuestion" class="submit-btn"/>
-				      </div>
-				    </div>
+				    <input type="submit" name="submitQuestion" class="submit-btn"/>
+
 				</form>
 				
-			</div>
-			
-			</div>
 		</div>
 
 	</article>
