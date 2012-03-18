@@ -787,7 +787,11 @@
 	input.placeholder, textarea.placeholder { color: #888; }
 
 	/* Text input and textarea sizes */
+<<<<<<< HEAD
+	input.input-text, textarea { width: 207px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+=======
 	input.input-text, textarea { width: 254px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+>>>>>>> 8b519b7b0b12e03d0d5e76588af5177b9aea46ab
 	input.small, textarea.small { width: 134px; }
 	input.medium, textarea.medium { width: 254px; }
 	input.large, textarea.large { width: 434px; }
