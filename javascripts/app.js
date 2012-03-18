@@ -61,21 +61,56 @@ jQuery(document).ready(function ($) {
 
 var getResults = function() {
 
-          $.getJSON('twilio_sendsms.php', function(data) {
-          var items = [];
-          try{
-            $.each(data, function(key,val)){
-              items.push('<li>Name'+ status +'</li>')
-            }
-          } catch (err) {
-              console.log('error:'+ err);
-          }
+        //   $.getJSON('twilio_sendsms.php', function(data) {
+        //   var items = [];
+        //   try{
+        //   	$('.form-wrapper').hide();
+        //   	console.log('success!');
+        //     $.each(data, function(key,val)){
+        //       items.push('<li>'+ key +': '+ val +'</li>')
+        //     }
+        //   } catch (err) {
+        //       console.log('error:'+ err);
+        //   }
 
-          $('<ul/>', {
-            'class': 'my-new-list',
-            html: items.join('')
-          }).appendTo('body');
-        });
+        //   $('<ul/>', {
+        //     'class': 'results-list',
+        //     html: items.join('')
+        //   }).appendTo('body');
+        // });
+
+  /* attach a submit handler to the form */
+  // $("#send-sms").submit(function(event) {
+
+  //   /* stop form from submitting normally */
+  //   event.preventDefault(); 
+        
+  //   /* get some values from elements on the page: */
+  //   var $form = $( this ),
+  //       term = $form.find( 'input[name="s"]' ).val(),
+  //       url = $form.attr( 'action' );
+
+  //   /* Send the data using post and put the results in a div */
+  //   $.post( url, { s: term },
+  //     function( data ) {
+  //         var content = $( data ).find( '#content' );
+  //         $( "#result" ).empty().append( content );
+  //     }
+  //   );
+  // });
+				var options = { 
+			    target:     '#content', 
+			    url:        'twilio_sendsms.php', 
+			    success:    function() { 
+			    console.log('Form Submitted');
+                $('.form-wrapper').fadeOut();
+
+                $('#content').append('<p class="alert_info">Message sent successfully!</p>');
+			    } 
+			};
+
+            $('#send-sms').ajaxForm(options);
+
 }
 
 	/* UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE6/7/8 SUPPORT AND ARE USING .block-grids */
