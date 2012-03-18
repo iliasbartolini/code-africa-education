@@ -32,16 +32,30 @@ table.student-answers {
   width: 100%;
 }
 
+table.student-answers td.answer,
+table.student-answers td.indicator {
+  text-align: center;
+}
+
+
+
 table.student-answers tr.correct .indicator {
   font-weight: bold;
   color: green;
-  background: no-repeat url('../images/yes_indicator.png');
+  background: no-repeat url('../images/yes_indicator.png') 19px 11px;
+  text-indent: -5000px;
 }
 
 table.student-answers tr.incorrect .indicator {
   font-weight: bold;
   color: red;
-  background: no-repeat url('../images/no_indicator.png');  
+  background: no-repeat url('../images/no_indicator.png') 19px 11px;
+  text-indent: -5000px;
+}
+
+table.student-answers .header.answer,
+table.student-answers .header.indicator {
+  text-align: center;
 }
 
 /* -----------------------------------------
@@ -53,15 +67,10 @@ table.student-answers tr.incorrect .indicator {
 	height: 80px;
 }
 
-<<<<<<< HEAD
 .module {
 	padding: 10px 0 0;
 }
-=======
 
->>>>>>> 8b519b7b0b12e03d0d5e76588af5177b9aea46ab
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
-
+#footer {
+  clear: both;
+}
