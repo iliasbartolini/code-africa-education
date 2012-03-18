@@ -105,7 +105,7 @@ var getResults = function() {
 			    console.log('Form Submitted');
                 $('.form-wrapper').fadeOut();
 
-                $('#content').append('<p class="message">Message sent successfully!</p>');
+                $('#content').append('<p class="alert_info">Message sent successfully!</p>');
 			    } 
 			};
 
