@@ -69,12 +69,14 @@ require('config.php');
 				    </div>
 				    
 				    <table class="student-answers">
-				      <tr class="row-head">
-				        <td>Name</td>
-				        <td>Phone Number</td>
-				        <td>Answer</td>
-				        <td>Correct?</td>
-				      </tr>
+				      <thead> 
+        				<tr> 
+            				<th class="header">Name</th> 
+            				<th class="header">Phone Number</th> 
+            				<th class="header">Answer</th> 
+            				<th class="header">Correct?</th> 
+        				</tr> 
+        			</thead>
 				    <?php
 				    for($row = 0; $row < count($DEFAULT_USERS); ++$row) {
 				      ?>
