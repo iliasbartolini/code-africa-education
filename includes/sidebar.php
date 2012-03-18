@@ -3,18 +3,17 @@
 			<input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
 		</form>
 		<hr/>
-		<h3>Content</h3>
+		<h3>Questions</h3>
 		<ul class="toggle">
-			<li class="icn_new_article"><a href="#">New Article</a></li>
-			<li class="icn_edit_article"><a href="#">Edit Articles</a></li>
+			<li class="icn_new_article"><a href="newquestion.php">New Question</a></li>
+			<li class="icn_edit_article"><a href="#">Edit Questions</a></li>
 			<li class="icn_categories"><a href="#">Categories</a></li>
 			<li class="icn_tags"><a href="#">Tags</a></li>
 		</ul>
-		<h3>Users</h3>
+		<h3>Students</h3>
 		<ul class="toggle">
 			<li class="icn_add_user"><a href="#">Add New Student</a></li>
 			<li class="icn_view_users"><a href="#">View Students</a></li>
-			<li class="icn_profile"><a href="#">Your Profile</a></li>
 		</ul>
 		<h3>Media</h3>
 		<ul class="toggle">
