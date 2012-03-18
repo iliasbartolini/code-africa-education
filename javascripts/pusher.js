@@ -38,6 +38,7 @@ function mark_input_correct($input_field, answer) {
 
   $parent
    .removeClass('unanswered')
+   .removeClass('incorrect')
    .addClass('correct');
 
   $parent
@@ -50,6 +51,7 @@ function mark_input_incorrect($input_field, answer) {
 
   $parent
    .removeClass('unanswered')
+   .removeClass('correct')
    .addClass('incorrect');
 
   $parent
