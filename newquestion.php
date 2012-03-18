@@ -18,7 +18,6 @@ require('config.php');
 	<title>Welcome to Code Africa Education</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 
 	<!--[if lt IE 9]>
@@ -121,8 +120,6 @@ require('config.php');
 	<!-- container -->
 
 	<!-- Included JS Files -->
-	<script src="javascripts/modernizr.foundation.js"></script>
-	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
 	
 	<script>
