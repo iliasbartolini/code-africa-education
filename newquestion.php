@@ -64,7 +64,7 @@ require('config.php');
 				        <label for="answer">Answer</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="answer"></textarea>
+					      <textarea name="answer" id="answer"></textarea>
 				      </div>
 				    </div>
 				    
