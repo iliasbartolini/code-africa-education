@@ -63,3 +63,6 @@ table.student-answers .header.indicatior {
 	padding: 10px 0 0;
 }
 
+#footer {
+  clear: both;
+}
