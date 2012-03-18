@@ -22,7 +22,7 @@ function debug($data, $label = NULL) {
   }
 
   // The temp directory does vary across multiple simpletest instances.
-  $file = '/logging.log';
+  $file = $dir_path . '/logging.log';
   if (file_put_contents($file, $out, FILE_APPEND) === FALSE) {
     return FALSE;
   }

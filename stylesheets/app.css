@@ -27,6 +27,11 @@ form[name='questionForm'] label {
   font-weight: bold;
 }
 
+table.student-answers {
+  margin-top: 10px;
+  width: 100%;
+}
+
 
 /* -----------------------------------------
    Send SMS

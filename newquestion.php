@@ -75,47 +75,36 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				      </div>
 				    </div>
 				    
-				    <hr />
-				    
-				    <div class="row row-head">
-				      <div class="columns four">
-				        Name
-				      </div>
-				      <div class="columns three">
-				        Phone Number
-				      </div>
-				      <div class="columns three">
-				        Answer
-				      </div>
-				      <div class="columns two">
-				        Correct?
-				      </div>
-				    </div>
+				    <table class="student-answers">
+				      <tr class="row-head">
+				        <td>Name</td>
+				        <td>Phone Number</td>
+				        <td>Answer</td>
+				        <td>Correct?</td>
+				      </tr>
 				    <?php
 				    for($row = 0; $row < count($DEFAULT_USERS); ++$row) {
 				      ?>
-				    <div class="row">
-				      <div class="columns four">
+				    <tr class="unanswered">
+				      <td>
 				        <input class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
-				      </div>
-				      <div class="columns three">
+				      </td>
+				      <td>
 				        <input class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
-				      </div>
-				      <div class="columns three">
+				      </td>
+				      <td class="answer">
 				        Answer
-				      </div>
-				      <div class="columns two">
+				      </td>
+				      <td class="indicator">
 				        Y/N
-				      </div>
-				    </div>
+				      </td>
+				    </tr>
 				    <?php
 			      }
 				    ?>
-				    <div class="row">
-				      <div class="columns twelve">
-				        <input type="submit" name="submitQuestion" class="submit-btn"/>
-				      </div>
-				    </div>
+				    </table>
+				    
+				    <input type="submit" name="submitQuestion" class="submit-btn"/>
 				</form>
 				
 			</div>
