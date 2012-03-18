@@ -42,7 +42,7 @@ foreach($data as $record) {
   // @TODO: validate/format phone
   try {
     $message = $client->account->sms_messages->create(
-      '+442071838750', // From a valid Twilio phone
+      TWILIO_FROM_NUMBER, // From a valid Twilio phone
       $phone, // Text this phone
       $question
     );
