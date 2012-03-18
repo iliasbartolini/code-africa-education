@@ -1,5 +1,7 @@
 .project
 .gitconfig
+.idea
+apache_*_log
 
 #to avoid publishing prod envirorment cofig 
 config.php
