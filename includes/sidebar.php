@@ -1,4 +1,7 @@
-	<aside id="sidebar" class="column">
+	<aside id="sidebar" style="height: auto !important;" class="column">
+		<div style="background: #fff; padding: 15px;">
+			<a href="index.php"><img style="max-width:100%" src="images/logo.png"/></a>
+		</div>
 		<form class="quick_search">
 			<input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
 		</form>
@@ -26,7 +29,7 @@
 		<ul class="toggle">
 			<li class="icn_settings"><a href="#">Options</a></li>
 			<li class="icn_security"><a href="#">Security</a></li>
-			<li class="icn_jump_back"><a href="#">Logout</a></li>
+			<li class="icn_jump_back"><a href="logon.php">Logout</a></li>
 		</ul>
 		
 		<footer>
