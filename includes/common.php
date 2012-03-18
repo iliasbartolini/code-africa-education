@@ -14,7 +14,7 @@ function debug($data, $label = NULL) {
   }
   $out .= "\n";
 
-  $dir_path = dirname(__FILE__) . '/private';
+  $dir_path = dirname(__FILE__) . '/../private';
 
   if(!file_exists($dir_path)) {
     mkdir($dir_path);
