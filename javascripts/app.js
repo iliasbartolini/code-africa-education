@@ -58,6 +58,19 @@ jQuery(document).ready(function ($) {
   /* TOOLTIPS ------------ */
   $(this).tooltips();
 
+  var options = {
+    target:'#content',
+    url:'twilio_sendsms.php',
+    success:function () {
+      console.log('Form Submitted');
+      $('.form-wrapper').fadeOut();
+
+      $('#content').append('<p class="alert_info">Message sent successfully!</p>');
+    }
+  };
+
+  $('#send-sms').ajaxForm(options);
+
   var getResults = function () {
 
     //   $.getJSON('twilio_sendsms.php', function(data) {
@@ -97,19 +110,6 @@ jQuery(document).ready(function ($) {
     //     }
     //   );
     // });
-    var options = {
-      target:'#content',
-      url:'twilio_sendsms.php',
-      success:function () {
-        console.log('Form Submitted');
-        $('.form-wrapper').fadeOut();
-
-        $('#content').append('<p class="alert_info">Message sent successfully!</p>');
-      }
-    };
-
-    $('#send-sms').ajaxForm(options);
-
   }
 
   /* UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE6/7/8 SUPPORT AND ARE USING .block-grids */
