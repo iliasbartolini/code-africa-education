@@ -3,7 +3,7 @@ Pusher.log = function (msg) {
     console.log(msg);
   }
 }
-var pusher = new Pusher(PUSHER_APP_KEY);
+var pusher = new Pusher(PUSHER_APP_KEY, {'encrypted': true});
 var channel = pusher.subscribe('prototype-answers');
 channel.bind('new_answer', newAnswerReceived);
 
