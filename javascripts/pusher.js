@@ -14,13 +14,14 @@ function newAnswerReceived(data) {
   $('[name="phone[]"]').each(function () {
     var page_nr = $(this).val();
     if (page_nr == data.From) {
+      // @todo: check answer
       $(this).parents('tr').addClass('correct');
-      $(this).parents('td.aswer').text('Y');
+      $(this).parents('td.indicator').text('Y');
     }
 
     return;
   });
 
 
-  alert( JSON.stringify(data) );
+  //alert( JSON.stringify(data) );
 }
