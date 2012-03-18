@@ -58,13 +58,13 @@ require('config.php');
 				      <label for="question">Question</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="question"></textarea>
+					      <textarea required="required" name="question"></textarea>
 				      </div>
 				      <div class="columns two">
 				        <label for="answer">Answer</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="answer"></textarea>
+					      <textarea required="required" name="answer"></textarea>
 				      </div>
 				    </div>
 				    
@@ -82,10 +82,10 @@ require('config.php');
 				      ?>
 				    <tr class="unanswered">
 				      <td>
-				        <input class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
+				        <input required="required" class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
 				      </td>
 				      <td>
-				        <input class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
+				        <input required="required" class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
 				      </td>
 				      <td class="answer">
 				        Answer

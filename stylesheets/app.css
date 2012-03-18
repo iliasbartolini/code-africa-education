@@ -32,6 +32,9 @@ table.student-answers {
   width: 100%;
 }
 
+table.student-answers tr.correct .indicator {
+  font-weight: bold;
+}
 
 /* -----------------------------------------
    Send SMS
