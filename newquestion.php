@@ -64,38 +64,40 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				      <label for="question">Question</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="question"></textarea>
+					      <textarea required="required" name="question"></textarea>
 				      </div>
 				      <div class="columns two">
 				        <label for="answer">Answer</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="answer" id="answer"></textarea>
+					      <textarea required="required" id="answer" name="answer"></textarea>
 				      </div>
 				    </div>
 				    
 				    <table class="student-answers">
-				      <tr class="row-head">
-				        <td>Name</td>
-				        <td>Phone Number</td>
-				        <td>Answer</td>
-				        <td>Correct?</td>
-				      </tr>
+				      <thead> 
+        				<tr> 
+            				<th class="header">Name</th> 
+            				<th class="header">Phone Number</th> 
+            				<th class="header">Answer</th> 
+            				<th class="header">Correct?</th> 
+        				</tr> 
+        			</thead>
 				    <?php
 				    for($row = 0; $row < count($DEFAULT_USERS); ++$row) {
 				      ?>
 				    <tr class="unanswered">
 				      <td>
-				        <input class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
+				        <input required="required" class="input-text" name="name[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['name']  ); ?>"/>
 				      </td>
 				      <td>
-				        <input class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
+				        <input required="required" class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
 				      </td>
 				      <td class="answer">
-				        Answer
+				        -
 				      </td>
 				      <td class="indicator">
-				        Y/N
+				        -
 				      </td>
 				    </tr>
 				    <?php

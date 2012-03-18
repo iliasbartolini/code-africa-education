@@ -60,15 +60,24 @@ jQuery(document).ready(function ($) {
 
   var options = {
     url:'twilio_sendsms.php',
-    success: questionsSubmitted
+    success: questionsSubmitSuccessHandler,
+    beforeSubmit: beforeSubmitHandler
   };
 
   $('#send-sms').ajaxForm(options);
   
-  function questionsSubmitted() {
+  function questionsSubmitSuccessHandler() {
     if(console && console.log) {
       console.log('questions submitted');
     }
+    
+    $('#send-sms input[type="submit"]').slideUp();
+  }
+  
+  function beforeSubmitHandler() {
+    $('#send-sms input[type="submit"]')
+    .val('Submitting')
+    .attr('readonly', 'readonly');
   }
 
   /* DROPDOWN NAV ------------- */
