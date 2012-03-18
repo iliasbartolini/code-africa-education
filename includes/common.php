@@ -14,11 +14,27 @@ function debug($data, $label = NULL) {
   }
   $out .= "\n";
 
+  $dir_path = dirname(__FILE__) . '/private';
+
+  if(!file_exists($dir_path)) {
+    mkdir($dir_path);
+    make_dir_private($dir_path);
+  }
+
   // The temp directory does vary across multiple simpletest instances.
-  $file = '/tmp/codeafrica.txt';
+  $file = '/logging.log';
   if (file_put_contents($file, $out, FILE_APPEND) === FALSE) {
     return FALSE;
   }
+}
+
+function make_dir_private($dir_path) {
+  $htaccess_content =
+'# no nasty crackers in here!
+order deny,allow
+deny from all';
+
+  return file_put_contents($dir_path . '/.htaccess', $htaccess_content);
 }
 
 /**
