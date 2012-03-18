@@ -71,10 +71,6 @@ jQuery(document).ready(function ($) {
   $('#send-sms').ajaxForm(options);
   
   function questionsSubmitSuccessHandler() {
-    if(console && console.log) {
-      console.log('questions submitted');
-    }
-    
     $('#send-sms input[type="submit"]').slideUp();
   }
   
