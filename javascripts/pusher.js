@@ -1,5 +1,5 @@
 Pusher.log = function (msg) {
-  if (console && console.log) {
+  if (window.console != 'undefined') {
     console.log(msg);
   }
 }
