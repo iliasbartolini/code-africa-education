@@ -64,15 +64,17 @@ var getResults = function() {
           $.getJSON('twilio_sendsms.php', function(data) {
           var items = [];
           try{
+          	$('.form-wrapper').hide();
+          	console.log('success!');
             $.each(data, function(key,val)){
-              items.push('<li>Name'+ status +'</li>')
+              items.push('<li>'+ key +': '+ val +'</li>')
             }
           } catch (err) {
               console.log('error:'+ err);
           }
 
           $('<ul/>', {
-            'class': 'my-new-list',
+            'class': 'results-list',
             html: items.join('')
           }).appendTo('body');
         });
