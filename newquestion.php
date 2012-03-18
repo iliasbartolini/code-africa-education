@@ -71,7 +71,7 @@ if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
 				        <label for="answer">Answer</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea required="required" name="answer"></textarea>
+					      <textarea required="required" id="answer" name="answer"></textarea>
 				      </div>
 				    </div>
 				    
