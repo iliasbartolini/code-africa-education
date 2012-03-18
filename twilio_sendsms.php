@@ -76,7 +76,7 @@ foreach($results as $result) {
 
 if ($had_errors) {
   $result = array(
-    'status' => !$has_errors,
+    'status' => !$had_errors,
   );
   print json_encode($result);
 }
