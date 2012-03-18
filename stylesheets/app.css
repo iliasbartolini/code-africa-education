@@ -34,6 +34,12 @@ table.student-answers {
 
 table.student-answers tr.correct .indicator {
   font-weight: bold;
+  color: green;
+}
+
+table.student-answers tr.incorrect .indicator {
+  font-weight: bold;
+  color: red;
 }
 
 /* -----------------------------------------

@@ -88,10 +88,10 @@ require('config.php');
 				        <input required="required" class="input-text" name="phone[]" type="text" value="<?php echo( $DEFAULT_USERS[$row]['phone']  ); ?>" />
 				      </td>
 				      <td class="answer">
-				        Answer
+				        -
 				      </td>
 				      <td class="indicator">
-				        Y/N
+				        -
 				      </td>
 				    </tr>
 				    <?php
