@@ -30,14 +30,17 @@ if(session_id() != '') {
 
 			<section id="main" style="width: 100%;" class="column">
 		
-		<article class="module width_full" style="margin: 50px auto; width: 400px; text-align: center;">
-		  <header><h3>Login to continue</h3></header>
-		  
+		<article class="module width_full logon" style="margin: 50px auto; width: 400px; text-align: center;">
 		  <div class="module_content">
+			
+				<img id="login_logo" src="images/logo.png" alt="" />
+						
 		  <form id="logon" method="POST" action="index.php">
+			  <div id="logon_center">
 		  	<input placeholder="Type your username" name="username" id="username" type="text" class="input-text"/>
 		  	
 		  	<input placeholder="Password" name="password" id="password" type="password" class="input-text"/>
+		  </div>
 		  	
 		  	<button id="btn-submit small white button radius">Log in</button>
 		  </form>
