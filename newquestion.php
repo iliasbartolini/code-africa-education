@@ -1,5 +1,12 @@
 <?php
-require('config.php');
+		error_reporting(E_ALL ^ E_NOTICE);
+ini_set('display_errors', 1);
+
+session_start();
+		require('config.php');
+if (empty($_SESSION['user']) || $_SESSION['user'] != USERNAME) {
+	header("Location:logon.php");	
+}
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +70,7 @@ require('config.php');
 				        <label for="answer">Answer</label>
 				      </div>
 				      <div class="columns four">
-					      <textarea name="answer"></textarea>
+					      <textarea name="answer" id="answer"></textarea>
 				      </div>
 				    </div>
 				    
